@@ -1,0 +1,2 @@
+body{background-color:var(--primare-bg-color);color:var(--primary-text-color);font-family:"Roboto", sans-serif;font-style:normal;letter-spacing:0.03em}h1,h2,h3,h4,h5,h6,p{margin:0}ul,ol{margin:0;padding:0}img{display:block;max-width:100%;height:auto}.list{list-style:none}.link{text-decoration:none}address{font-style:normal}.section{padding-top:94px;padding-bottom:94px}:root{--primary-text-color: #757575;--secondary-text-color: #212121;--accent-color: #2196f3;--white-text-color: #fff;--primare-bg-color: #fff;--bg-color: #2f303a}
+/*# sourceMappingURL=main.min.css.map */
