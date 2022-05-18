@@ -16,10 +16,10 @@
     <!-- Шапка -->
     <header class="page-header">
       <div class="container">
-        <nav class="navigation">
+        <nav class="site-nav">
           <a href="./index.html" class="logo link">Web<span class="logo-header">Studio</span></a>
 
-          <ul class="site-nav list">
+          <ul class="site-nav-list list">
             <li class="site-nav-item">
               <a href="./index.html" class="site-nav-link current link">Студия</a>
             </li>
@@ -95,6 +95,123 @@
        
       </div>
     </header>
+    <!-- Основа -->
+    <main>
+    <!-- Герой -->
+      <section class="hero">
+        <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
+        <button type="button" class="button" data-modal-open>Заказать услугу</button> 
+      </section>
+    <!-- Преимущества -->
+      <section class="features section"> 
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="container">
+          <ul class="features-list list">
+            <li class="features-item">
+                <div class="features-thumbs">
+                    <svg class="features-icons">
+                        <use href="./images/sprite.svg#icon-antenna"></use>
+                    </svg>
+                </div>
+                <h3 class="features-title">Внимание к деталям</h3>
+                <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                </p>
+            </li>
+            <li class="features-item">
+                <div class="features-thumbs">
+                    <svg class="features-icons">
+                        <use href="./images/sprite.svg#icon-clock"></use>
+                    </svg>
+                </div>
+                <h3 class="features-title">Пунктуальность</h3>
+                <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                </p>
+            </li>
+            <li class="features-item">
+                <div class="features-thumbs">
+                    <svg class="features-icons">
+                        <use href="./images/sprite.svg#icon-diagram"></use>
+                    </svg>
+                </div>
+                <h3 class="features-title">Планирование</h3>
+                <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.
+                </p>
+            </li>
+            <li class="features-item">
+                <div class="features-thumbs">
+                    <svg class="features-icons">
+                        <use href="./images/sprite.svg#icon-astronaut"></use>
+                    </svg>
+                </div>
+                <h3 class="features-title">Современные технологии</h3>
+                <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                </p>
+            </li>  
+          </ul>
+        </div>
+      </section> 
+
+
+
+    </main>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal> 
+        <div class="modal">
+            <button type="button" class="modal-btn-close" data-modal-close>
+                <svg class="modal-btn-close-icon"><use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form class="form">
+                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+
+                <label class="form-label">
+                    Имя
+                    <span class="form-input-thumb">
+                        <input type="text" name="user-name" class="form-input">
+                        <svg class="form-input-icon">
+                            <use href="/images/sprite.svg#icon-person-form"></use>
+                        </svg>
+                    </span>
+                </label>
+                
+
+                <label class="form-label">
+                    Телефон
+                    <span class="form-input-thumb">
+                        <input type="tel" name="phone" class="form-input">
+                        <svg class="form-input-icon">
+                            <use href="/images/sprite.svg#icon-phone-form"></use>
+                        </svg>
+                    </span>
+                </label>
+                
+
+                <label class="form-label">
+                    Почта
+                    <span class="form-input-thumb">
+                        <input type="email" name="email" class="form-input">
+                        <svg class="form-input-icon">
+                            <use href="/images/sprite.svg#icon-email-form"></use>
+                        </svg>
+                    </span>
+                </label>
+                
+               
+                <label class="form-label">
+                    Комментарий
+                    <textarea name="massage" placeholder="Введите текст" class="form-massage"></textarea>
+                </label>
+               
+                
+                  <input type="checkbox" name="policy-agree" class="form-checkbox-policy" id="checkbox">
+                  <label for="checkbox" class="form-label-checkbox">Соглашаюсь с рассылкой и принимаю<a href="" class="form-policy-link">Условия договора</a></label>
+               
+
+                <button type="submit" class="submit-btn button">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>  
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

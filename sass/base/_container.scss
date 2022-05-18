@@ -3,6 +3,24 @@
   padding: 0 15px;
   outline: 1px solid tomato;
 
+  @media screen and (max-width: 767px) {
+    .page-header & {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .page-header & {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+  }
+
   @media screen and (min-width: 480px) {
     margin: 0 auto;
     width: 480px;
@@ -16,28 +34,8 @@
     width: 1200px;
   }
 
-  .page-header & {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
 }
 
-
-// .page-header & {
-//   display: flex;
-//   align-items: center;
-//   // justify-content: space-between;
-//   height: 60px;
-
-
-//     .page-header & {
-//         display: flex;
-//         align-items: center;
-//     }
 
 //     .footer & {
 //         display: flex;

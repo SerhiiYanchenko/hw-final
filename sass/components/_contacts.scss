@@ -1,39 +1,51 @@
-.contacts-mobile {
-    margin-bottom: 64px;
+@media screen and (max-widh: 767px) {
+
+    .contacts-mobile {
+        margin-bottom: 64px;
+    }
+
+    .contacts-mobile-item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .contacts-mobile-tel {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--accent-color)
+    }
+
+    .contacts-mobile-mail {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+    }
+
 }
 
-.contacts-mobile-item {
-    &:not(:last-child) {
-        margin-bottom: 32px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .contacts-mail {
+        margin-bottom: 10px;
+
     }
 }
 
-.contacts-mobile-tel {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--accent-color)
+@media screen and (min-width: 1200px) {
+    .contacts {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .contacts-mail {
+        margin-right: 50px;
+    }
 }
-
-.contacts-mobile-mail {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-}
-
-.contacts {
-    display: flex;
-    margin-left: auto;
-}
-
-
-.contacts-mail {
-    margin-right: 50px;
-}
-
 
 .icon-mail {
     margin-right: 10px;
