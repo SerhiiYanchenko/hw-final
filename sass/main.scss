@@ -11,10 +11,15 @@
 @import "./components/site-nav";
 @import "./components/contacts";
 @import "./components/button";
+@import "./components/social-list";
 
 
 // LAYOUT
 @import "./layout/page-header";
 @import "./layout/hero";
 @import "./layout/features";
+@import "./layout/working";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
 @import "./layout/modal";

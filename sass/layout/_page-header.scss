@@ -12,7 +12,6 @@
     display: none;
   }
 
-
   .burger-btn,
   .mobile-close-btn {
     background-color: transparent;
@@ -54,7 +53,7 @@
   .mobile-menu {
     position: absolute;
     width: 100%;
-    max-width: 480px;
+    // max-width: 480px;
     height: 100vh;
     top: 0;
     left: 50%;
@@ -134,7 +133,4 @@
     display: none;
   }
 
-
 }
-
-@media screen and (min-width:1200px) {}
