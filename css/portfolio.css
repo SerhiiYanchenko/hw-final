@@ -368,14 +368,52 @@ address {
 }
 
 .project-filter {
+  padding-top: 60px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .project-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-filter {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}
+
+.project-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .project-item {
+    margin-bottom: 10px;
+  }
 }
 
 .button-filter {
@@ -411,33 +449,40 @@ address {
   padding-bottom: 94px;
 }
 
-.project-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.projects-examples {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -15px;
+@media screen and (min-width: 768px) {
+  .projects-examples {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .project-examples-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 15px;
 }
 
-.project-item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (max-width: 767px) {
+  .project-examples-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-examples-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-examples-item {
+    width: calc((100% - 6 * 15px) / 3);
+  }
 }
 
 .project-title {
@@ -546,23 +591,25 @@ address {
     height: 40px;
     fill: var(--secondary-text-color);
   }
-  .mobile-menu {
+  .mobile-menu-nav {
     position: absolute;
+    z-index: 999;
     width: 100%;
-    height: 100vh;
+    max-width: 480px;
     top: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-50%) translateY(-100%);
+            transform: translateX(-50%) translateY(-100%);
     padding: 48px 40px;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
     background: var(--primare-bg-color);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
+  .mobile-menu-nav.is-open {
+    -webkit-transform: translateX(-50%) translateY(0%);
+            transform: translateX(-50%) translateY(0%);
   }
   .mobile-menu-nav-list {
     margin-bottom: 302px;
@@ -608,7 +655,7 @@ address {
 @media screen and (min-width: 768px) {
   .burger-btn,
   .mobile-close-btn,
-  .mobile-menu {
+  .mobile-menu-nav {
     display: none;
   }
 }

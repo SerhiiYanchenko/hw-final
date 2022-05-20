@@ -59,7 +59,7 @@
 
         </div>
 
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-nav" data-menu>
             <button class="mobile-close-btn" type="button" data-menu-close>
                 <svg class="close-icon">
                     <use href="images/sprite.svg#icon-close-mobile"></use>
@@ -67,10 +67,10 @@
             </button>
             <ul class="mobile-menu-nav-list list">
                 <li class="mobile-menu-nav-item">
-                    <a href="" class="mobile-menu-nav-link link">Студия</a>
+                    <a href="./index.html" class="mobile-menu-nav-link link">Студия</a>
                 </li>
                 <li class="mobile-menu-nav-item">
-                    <a href="" class="mobile-menu-nav-link link">Портфолио</a>
+                    <a href="./portfolio.html" class="mobile-menu-nav-link link">Портфолио</a>
                 </li>
                 <li class="mobile-menu-nav-item">
                     <a href="" class="mobile-menu-nav-link link">Контакты</a>
@@ -100,9 +100,9 @@
                     <a href="" class="social-list-mobile-link link">LinkedIn</a>
                 </li>
             </ul>
+
         </div>
     </header>
-
     <!-- Основа -->
     <main>
 
@@ -126,8 +126,31 @@
                         <li class="project-examples-item">
                             <a href="" class="project-link link">
                                 <div class="project-thumb">
-                                    <img class="" src="./images/projects/project1.jpg"
-                                        alt="Страничка с веб-сайта Технократия" width="370" height="270">
+                                    <picture>
+                                        <source
+                                            srcset="./images/portfolio/p1-desktop.webp 1x, ./images/portfolio/p1-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/portfolio/p1-desktop.jpg 1x, ./images/portfolio/p1-desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p1-tablet.webp 1x, ./images/portfolio/p1-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/portfolio/p1-tablet.jpg 1x, ./images/portfolio/p1-tablet@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p1-mobile.webp 1x, ./images/portfolio/p1-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)">
+                                        <source
+                                            srcset="./images/portfolio/p1-mobile.jpg 1x, ./images/portfolio/p1-mobile@2x.jpg 2x"
+                                            media="(max-width: 767px)">
+
+                                        <img class="team-img" src="./images/portfolio/p1-mobile.jpg"
+                                            alt="Страничка с веб-сайта Технократия">
+                                    </picture>
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -142,8 +165,31 @@
                         <li class="project-examples-item">
                             <a href="" class="project-link link">
                                 <div class="project-thumb">
-                                    <img src="./images/projects/project2.jpg" alt="Постер с баскетболистами" width="370"
-                                        height="270">
+                                    <picture>
+                                        <source
+                                            srcset="./images/portfolio/p2-desktop.webp 1x, ./images/portfolio/p2-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/portfolio/p2-desktop.jpg 1x, ./images/portfolio/p2-desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p2-tablet.webp 1x, ./images/portfolio/p2-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/portfolio/p2-tablet.jpg 1x, ./images/portfolio/p2-tablet@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p2-mobile.webp 1x, ./images/portfolio/p2-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)">
+                                        <source
+                                            srcset="./images/portfolio/p2-mobile.jpg 1x, ./images/portfolio/p2-mobile@2x.jpg 2x"
+                                            media="(max-width: 767px)">
+
+                                        <img class="team-img" src="./images/portfolio/p2-mobile.jpg"
+                                            alt="Постер с баскетболистами">
+                                    </picture>
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -159,8 +205,31 @@
                         <li class="project-examples-item">
                             <a href="" class="project-link link">
                                 <div class="project-thumb">
-                                    <img src="./images/projects/project3.jpg" alt="Логотип ресторана" width="370"
-                                        height="270">
+                                    <picture>
+                                        <source
+                                            srcset="./images/portfolio/p3-desktop.webp 1x, ./images/portfolio/p3-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/portfolio/p3-desktop.jpg 1x, ./images/portfolio/p3-desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p3-tablet.webp 1x, ./images/portfolio/p3-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/portfolio/p3-tablet.jpg 1x, ./images/portfolio/p3-tablet@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p3-mobile.webp 1x, ./images/portfolio/p3-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)">
+                                        <source
+                                            srcset="./images/portfolio/p3-mobile.jpg 1x, ./images/portfolio/p3-mobile@2x.jpg 2x"
+                                            media="(max-width: 767px)">
+
+                                        <img class="team-img" src="./images/portfolio/p3-mobile.jpg"
+                                            alt="Логотип ресторана">
+                                    </picture>
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -175,7 +244,30 @@
                         <li class="project-examples-item">
                             <a href="" class="project-link link">
                                 <div class="project-thumb">
-                                    <img src="./images/projects/project4.jpg" alt="Наушники" width="370" height="270">
+                                    <picture>
+                                        <source
+                                            srcset="./images/portfolio/p4-desktop.webp 1x, ./images/portfolio/p4-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/portfolio/p4-desktop.jpg 1x, ./images/portfolio/p4-desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p4-tablet.webp 1x, ./images/portfolio/p4-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/portfolio/p4-tablet.jpg 1x, ./images/portfolio/p4-tablet@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p4-mobile.webp 1x, ./images/portfolio/p4-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)">
+                                        <source
+                                            srcset="./images/portfolio/p4-mobile.jpg 1x, ./images/portfolio/p4-mobile@2x.jpg 2x"
+                                            media="(max-width: 767px)">
+
+                                        <img class="team-img" src="./images/portfolio/p4-mobile.jpg" alt="Наушники">
+                                    </picture>
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -190,8 +282,30 @@
                         <li class="project-examples-item">
                             <a href="" class="project-link link">
                                 <div class="project-thumb">
-                                    <img src="./images/projects/project5.jpg" alt="Две коробки" width="370"
-                                        height="270">
+                                    <picture>
+                                        <source
+                                            srcset="./images/portfolio/p5-desktop.webp 1x, ./images/portfolio/p5-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/portfolio/p5-desktop.jpg 1x, ./images/portfolio/p5-desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p5-tablet.webp 1x, ./images/portfolio/p5-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/portfolio/p5-tablet.jpg 1x, ./images/portfolio/p5-tablet@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p5-mobile.webp 1x, ./images/portfolio/p5-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)">
+                                        <source
+                                            srcset="./images/portfolio/p5-mobile.jpg 1x, ./images/portfolio/p5-mobile@2x.jpg 2x"
+                                            media="(max-width: 767px)">
+
+                                        <img class="team-img" src="./images/portfolio/p5-mobile.jpg" alt="Две коробки">
+                                    </picture>
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -206,8 +320,31 @@
                         <li class="project-examples-item">
                             <a href="" class="project-link link">
                                 <div class="project-thumb">
-                                    <img src="./images/projects/project6.jpg"
-                                        alt="Страничка с веб-сайта на английском языке" width="370" height="270">
+                                    <picture>
+                                        <source
+                                            srcset="./images/portfolio/p6-desktop.webp 1x, ./images/portfolio/p6-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/portfolio/p6-desktop.jpg 1x, ./images/portfolio/p6-desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p6-tablet.webp 1x, ./images/portfolio/p6-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/portfolio/p6-tablet.jpg 1x, ./images/portfolio/p6-tablet@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p6-mobile.webp 1x, ./images/portfolio/p6-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)">
+                                        <source
+                                            srcset="./images/portfolio/p6-mobile.jpg 1x, ./images/portfolio/p6-mobile@2x.jpg 2x"
+                                            media="(max-width: 767px)">
+
+                                        <img class="team-img" src="./images/portfolio/p6-mobile.jpg"
+                                            alt="Страничка с веб-сайта на английском языке">
+                                    </picture>
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -222,8 +359,31 @@
                         <li class="project-examples-item">
                             <a href="" class="project-link link">
                                 <div class="project-thumb">
-                                    <img src="./images/projects/project7.jpg" alt="Разворот книги" width="370"
-                                        height="270">
+                                    <picture>
+                                        <source
+                                            srcset="./images/portfolio/p7-desktop.webp 1x, ./images/portfolio/p7-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/portfolio/p7-desktop.jpg 1x, ./images/portfolio/p7-desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p7-tablet.webp 1x, ./images/portfolio/p7-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/portfolio/p7-tablet.jpg 1x, ./images/portfolio/p7-tablet@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p7-mobile.webp 1x, ./images/portfolio/p7-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)">
+                                        <source
+                                            srcset="./images/portfolio/p7-mobile.jpg 1x, ./images/portfolio/p7-mobile@2x.jpg 2x"
+                                            media="(max-width: 767px)">
+
+                                        <img class="team-img" src="./images/portfolio/p7-mobile.jpg"
+                                            alt="Разворот книги">
+                                    </picture>
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -238,8 +398,31 @@
                         <li class="project-examples-item">
                             <a href="" class="project-link link">
                                 <div class="project-thumb">
-                                    <img src="./images/projects/project8.jpg" alt="Бирка с надписью" width="370"
-                                        height="270">
+                                    <picture>
+                                        <source
+                                            srcset="./images/portfolio/p8-desktop.webp 1x, ./images/portfolio/p8-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/portfolio/p8-desktop.jpg 1x, ./images/portfolio/p8-desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p8-tablet.webp 1x, ./images/portfolio/p8-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/portfolio/p8-tablet.jpg 1x, ./images/portfolio/p8-tablet@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p8-mobile.webp 1x, ./images/portfolio/p8-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)">
+                                        <source
+                                            srcset="./images/portfolio/p8-mobile.jpg 1x, ./images/portfolio/p8-mobile@2x.jpg 2x"
+                                            media="(max-width: 767px)">
+
+                                        <img class="team-img" src="./images/portfolio/p8-mobile.jpg"
+                                            alt="Бирка с надписью">
+                                    </picture>
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -254,8 +437,31 @@
                         <li class="project-examples-item">
                             <a href="" class="project-link link">
                                 <div class="project-thumb">
-                                    <img src="./images/projects/project9.jpg" alt="Главная страница веб-сайта"
-                                        width="370" height="270">
+                                    <picture>
+                                        <source
+                                            srcset="./images/portfolio/p9-desktop.webp 1x, ./images/portfolio/p9-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)">
+                                        <source
+                                            srcset="./images/portfolio/p9-desktop.jpg 1x, ./images/portfolio/p9-desktop@2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p9-tablet.webp 1x, ./images/portfolio/p9-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)">
+                                        <source
+                                            srcset="./images/portfolio/p9-tablet.jpg 1x, ./images/portfolio/p9-tablet@2x.jpg 2x"
+                                            media="(min-width: 768px)">
+
+                                        <source
+                                            srcset="./images/portfolio/p9-mobile.webp 1x, ./images/portfolio/p9-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)">
+                                        <source
+                                            srcset="./images/portfolio/p9-mobile.jpg 1x, ./images/portfolio/p9-mobile@2x.jpg 2x"
+                                            media="(max-width: 767px)">
+
+                                        <img class="team-img" src="./images/portfolio/p9-mobile.jpg"
+                                            alt="Главная страница веб-сайта">
+                                    </picture>
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
                                         сервисов. Все это позволит посетителю получить

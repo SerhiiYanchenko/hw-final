@@ -50,30 +50,21 @@
     fill: var(--secondary-text-color);
   }
 
-  .mobile-menu {
+  .mobile-menu-nav {
     position: absolute;
+    z-index: 999;
     width: 100%;
-    // max-width: 480px;
-    height: 100vh;
+    max-width: 480px;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-100%);
     padding: 48px 40px;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
     background: var(--primare-bg-color);
-    // box-shadow:
-    //   0px 4px 8px rgba(0, 0, 0, 0.04),
-    //   0px 2px 4px rgba(0, 0, 0, 0.08),
-    //   0px 1px 3px rgba(0, 0, 0, 0.16);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
+  .mobile-menu-nav.is-open {
+    transform: translateX(-50%) translateY(0%);
   }
 
   .mobile-menu-nav-list {
@@ -129,7 +120,7 @@
 
   .burger-btn,
   .mobile-close-btn,
-  .mobile-menu {
+  .mobile-menu-nav {
     display: none;
   }
 

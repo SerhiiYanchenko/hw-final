@@ -1,8 +1,37 @@
 .project-filter {
+    padding-top: 60px;
+    padding-bottom: 30px;
     display: flex;
-    justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    justify-content: start;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 50px;
+    }
+}
+
+.project-list {
+    display: inline-flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    @media screen and (max-width: 767px) {
+        & {
+            margin-bottom: 10px;
+        }
+    }
+
 }
 
 .button-filter {
@@ -33,9 +62,7 @@
 }
 
 
-// Куда???
 .button-filter.current {
     color: var(--white-text-color);
     background-color: var(--accent-color);
 }
-
